@@ -1,0 +1,36 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{
+  display:flex;justify-content:center;align-items:center;
+  min-height:100vh;
+  background:#000000; /* LABAS BLACK */
+}
+.calc{
+  background:#2d1b4e; /* LOOB DARK PURPLE */
+  border:2px solid #4a2d82;
+  padding:20px;border-radius:24px;width:300px;
+  box-shadow:0 0 25px rgba(123, 44, 255, 0.4);
+}
+.calc h3{color:#e9d5ff;text-align:center;font-size:14px;letter-spacing:1.5px;margin-bottom:10px;font-weight:600}
+#display{
+  width:100%;height:52px;background:#0f0a1e;color:#e9d5ff;
+  font-size:18px;text-align:right;padding:10px 12px;
+  border-radius:12px;border:1px solid #4a2d82;margin-bottom:6px;overflow:hidden
+}
+#api{
+  font-size:9px;color:#c4a0ff;background:#0f0a1e;
+  padding:5px 8px;border-radius:8px;margin-bottom:10px;
+  min-height:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  border:1px solid #2d1b4e;
+}
+.btns{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+button{
+  height:52px;border:none;border-radius:14px;
+  font-size:18px;cursor:pointer;
+  background:#3e2a6b;color:#fff;transition:0.15s;
+}
+button:hover{background:#553c8a}
+.o{background:#7c3aed} .o:hover{background:#a855f7}
+.c{background:#ef4444} .c:hover{background:#ff5c5c}
+.eq{background:#e9d5ff;color:#2d1b4e;font-weight:bold;grid-column:4;grid-row:4 / span 2;height:100%}
+.eq:hover{background:#ffffff}
+.z{grid-column:span 2}
